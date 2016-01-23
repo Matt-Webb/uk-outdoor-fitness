@@ -1,0 +1,19 @@
+<template name="layout">
+
+  <div id="preloader">
+    <div id="status">
+        <img src="img/logo.png" alt="" />
+    </div>
+  </div>
+
+  <div id="main-wrapper" class="clearfix">
+
+    {{ > header }} <!-- see ../common/header.html -->
+
+      {{ > yield }} <!-- loads the rout defined template! see ../../lib/router.js -->
+
+    {{ > footer }} <!-- see ../common/footer.html -->
+
+  </div>
+
+</template>
