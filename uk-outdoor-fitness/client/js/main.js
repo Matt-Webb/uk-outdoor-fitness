@@ -1,6 +1,6 @@
 (function($) {
 
-    'use strict'; 
+    'use strict';
 
     new WOW().init();
 
@@ -8,9 +8,9 @@
         /*  Preloader
         /*-----------------------------------------------------------------------------------*/
 
-        $(window).load(function() { 
-            $('#status').fadeOut(); 
-            $('#preloader').delay(350).fadeOut('fast'); 
+        $(window).load(function() {
+            $('#status').fadeOut();
+            $('#preloader').delay(350).fadeOut('fast');
             $('body').delay(350).css({'overflow':'visible'});
 
         });
@@ -26,9 +26,9 @@
         /*-----------------------------------------------------------------------------------*/
         /*  Slider Home
         /*-----------------------------------------------------------------------------------*/
-        $('.flexslider').flexslider({
-            animation: "fade"
-        });
+        // $('.flexslider').flexslider({
+        //     animation: "fade"
+        // });
 
         var windowWidth = $(window).width();
 
@@ -56,14 +56,14 @@
         }
 
         window.onload = function() {
-            logisticsEqualHeight()
-            sliderEqualHeight()
+            logisticsEqualHeight();
+            sliderEqualHeight();
             pagetitleEqualHeight();
         };
 
         window.onresize = function() {
-            logisticsEqualHeight()
-            sliderEqualHeight()
+            logisticsEqualHeight();
+            sliderEqualHeight();
             pagetitleEqualHeight();
         };
 
@@ -77,11 +77,11 @@
         /*-----------------------------------------------------------------------------------*/
         /*  Slider
         /*-----------------------------------------------------------------------------------*/
-        
-        $('.company-slider').flexslider({
-            animation: "slide",
-            autoplay: true
-        });
+
+        // $('.company-slider').flexslider({
+        //     animation: "slide",
+        //     autoplay: true
+        // });
 
         /*-----------------------------------------------------------------------------------*/
         /*  Services
@@ -111,7 +111,7 @@
                     items:2
                 }
             }
-        })
+        });
 
         /*-----------------------------------------------------------------------------------*/
         /*  Testimonial
@@ -132,7 +132,7 @@
                     items:2
                 }
             }
-        })
+        });
 
         /*-----------------------------------------------------------------------------------*/
         /*  Latest Post & Team Member
@@ -158,7 +158,7 @@
                     items:3
                 }
             }
-        })
+        });
 
         /*-----------------------------------------------------------------------------------*/
         /*  Number Counter
@@ -181,14 +181,14 @@
         });
 
         var slideRightBtn = document.querySelector('#slide-buttons');
-      
+
         slideRightBtn.addEventListener('click', function(e) {
-            e.preventDefault;
+            e.preventDefault();
             slideRight.open();
         });
 
         $(".slide-menu-items li.has-sub").click(function () {
-            $('.slide-menu-items li.has-sub ul').not($(this).children("ul").slideToggle()).hide();  
+            $('.slide-menu-items li.has-sub ul').not($(this).children("ul").slideToggle()).hide();
         });
 
-})(jQuery); 
+})(jQuery);
